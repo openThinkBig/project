@@ -12,15 +12,16 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c10bcbe1d13946345e9b5271c7587340&libraries=services"></script>
     <link rel="stylesheet" href="travel.css">
-
+    <script src="travel.js"></script>
 </head>
     <body>
         <div class="menuWrapper">
             <div class="menu">
                 <div class="profile container-fluid text-center">
-                    <img id="profileImg" class="img-circle" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png">
-                    <p id="name">닉네임</p>
+                    <img id="profileImg" class="img-circle">
+                    <p id="name"></p>
                 </div>
                 <div><p>MENU</p></div>
                 <ul>
@@ -35,9 +36,7 @@
     
         <button class="menuBtn">
             <div id="line-wrapper">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
+                <img src="/images/menu.png" alt="" height="40px">
               </div>
             <!--<img src="/images/menu.png" alt="" height="80px">-->
         </button>
@@ -89,7 +88,15 @@
         </div>
 
 
-        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c10bcbe1d13946345e9b5271c7587340&libraries=services"></script>
-        <script src="travel.js"></script>
+    
+        <script>
+            let newprof = JSON.parse(localStorage.getItem('profileData')).length;
+            let profileData = JSON.parse(localStorage.getItem('profileData'));
+            let name = profileData[newprof-1].name;
+            let img = profileData[newprof-1].profile;
+    
+            $("#profileImg").attr("src", img);
+            document.getElementById("name").innerHTML = name;
+        </script>
     </body>
 </html>
