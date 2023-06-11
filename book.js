@@ -161,8 +161,3 @@ function newBook() {
     console.log(bookName);
     location.reload();
 }
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 151f7800fc3cb196c1faddfc139182e0cfea09f4

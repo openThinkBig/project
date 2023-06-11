@@ -191,12 +191,8 @@ background-size: cover;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
   margin-bottom: 40px;
-<<<<<<< HEAD
-  /* width: ; */
-=======
   /* width: 0px; */
   height: 10px;
->>>>>>> 151f7800fc3cb196c1faddfc139182e0cfea09f4
 }
 
 .home-cards img {
@@ -292,13 +288,23 @@ h1::-moz-selection {
 
 .sectionWrapper {
   width: 85%;
-  height: 100%;
-  margin: auto;
+  padding-top: 0;
+  margin: 0;
   display: flex;
-  justify-content: center;
   flex-direction: column;
   position: relative;
 }
+
+.wrapperWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.aboutWrapper {
+  margin: 0 auto;
+  text-align: center;
+}
+
 
 .background {
   width: 100vw;

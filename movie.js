@@ -221,16 +221,5 @@ function newMovie() {
 // document.getElementById("movieTitle").innerHTML = name;
 // $("#movieImg").attr("src", img);
 
-<<<<<<< HEAD
-// document.getElementById("text").innerHTML = review;
-=======
 // document.getElementById("text").innerHTML = review;
 
-    let newprof = JSON.parse(localStorage.getItem('profileData')).length;
-        let profileData = JSON.parse(localStorage.getItem('profileData'));
-        let name = profileData[newprof-1].name;
-        let img = profileData[newprof-1].profile;
-
-        $("#profileImg").attr("src", img);
-        document.getElementById("name").innerHTML = name;
->>>>>>> 151f7800fc3cb196c1faddfc139182e0cfea09f4

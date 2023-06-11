@@ -1,12 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<<<<<<< HEAD
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-=======
 
 <head>
     <meta charset="utf-8">
@@ -14,7 +7,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
->>>>>>> 151f7800fc3cb196c1faddfc139182e0cfea09f4
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -24,19 +16,12 @@
     <link rel="stylesheet" href="menu.css">
     <title>책 틀 </title>
 </head>
-<<<<<<< HEAD
-=======
 
->>>>>>> 151f7800fc3cb196c1faddfc139182e0cfea09f4
 <body>
 
     <!-- 옆에 토글 메뉴 -->
     <div class="menu">
-<<<<<<< HEAD
-         <div class="profile container-fluid text-center">
-=======
         <div class="profile container-fluid text-center">
->>>>>>> 151f7800fc3cb196c1faddfc139182e0cfea09f4
             <img id="profileImg" class="img-circle">
             <p id="name"></p>
         </div>
@@ -44,33 +29,19 @@
             <p>MENU</p>
         </div>
         <ul>
-<<<<<<< HEAD
-            <li><a href="#">DIARY</a></li>
-            <li><a href="#">WEEKLY</a></li>
-            <li><a href="#">MEMO</a></li>
-            <li><a href="#">TRAVEL</a></li>
-            <li><a href="#">BOOK</a></li>
-            <li><a href="#">MOVIE</a></li>
-=======
-            <li><a href="weekly.html">WEEKLY</a></li>
+            <li><a href="todo.html">TODO</a></li>
             <li><a href="memo.html">MEMO</a></li>
             <li><a href="travel.html">TRAVEL</a></li>
             <li><a href="book.html" id="selectedMenu">BOOK</a></li>
             <li><a href="movie.html">MOVIE</a></li>
->>>>>>> 151f7800fc3cb196c1faddfc139182e0cfea09f4
         </ul>
     </div>
 
 
     <!-- 메뉴 html -->
     <button class="menuBtn">
-<<<<<<< HEAD
-          <img src="/images/menu.png" alt="" height="40px" style="margin-top: 10px; margin-left: 10px;">
-    </button>   
-=======
         <img src="/images/menu.png" alt="" height="40px" style="margin-top: 10px; margin-left: 10px;">
     </button>
->>>>>>> 151f7800fc3cb196c1faddfc139182e0cfea09f4
 
 
 
@@ -79,18 +50,6 @@
 
     <!-- Top "Book 헤드 부분" -->
     <div class="book-body">
-<<<<<<< HEAD
-        <div id = "searchGroup" class="container-fluid text-center bg-1">
-            <h1 id="TITLE">BOOK</h1>
-            <form class="form-inline">  
-                 <button type="button"  id="addBtn" onclick="add_div()" class="btn btn-default">+</button>
-            </form>
-        </div>  
-     
-
-
-        
-=======
         <div id="searchGroup" class="container-fluid text-center bg-1">
             <h1 id="TITLE">BOOK</h1>
             <form class="form-inline">
@@ -101,23 +60,11 @@
 
 
 
->>>>>>> 151f7800fc3cb196c1faddfc139182e0cfea09f4
         <!-- 영화 추가할 때 정보 기입하는 파트 -->
         <div id="part1" style="background-color: #eeeeee; margin: 50px; padding: 50px; display: none;">
             <div style="float: left; width: 50%; padding: 10px;">
 
                 <!-- 영화 이름과 제출 버튼 -->
-<<<<<<< HEAD
-                    <label for="tit" style="position:relative;">Book Name: </label>
-                    <input type="text" id="tit" style="position:relative;">
-                   <button  type="submit" id="btn" onclick="newBook()">save</button>
-
-                <!-- 이미지 가져오는 부분 -->
-                <div class="getImg">  
-                    <form method="post" enctype="multipart/form-data">
-                        <label for="chooseFile">
-                        <img src="https://posterworld.net/web/product/big/202105/58a77062c2c69ff9d1100409e4b0bbb2.jpg" class="image-show" style="width:400px;height:520px;display:block;left:10px;top:20px;position:relative;">
-=======
                 <label for="tit" style="position:relative;">Book Name: </label>
                 <input type="text" id="tit" style="position:relative;">
                 <button type="submit" id="btn" onclick="newBook()">save</button>
@@ -129,7 +76,6 @@
                             <img src="https://posterworld.net/web/product/big/202105/58a77062c2c69ff9d1100409e4b0bbb2.jpg"
                                 class="image-show"
                                 style="width:400px;height:520px;display:block;left:10px;top:20px;position:relative;">
->>>>>>> 151f7800fc3cb196c1faddfc139182e0cfea09f4
                         </label>
                         <br> <br> <br>
                         <input type="file" id="chooseFile" name="chooseFile" accept="image/*">
@@ -141,12 +87,8 @@
             <div id="side" style="float: left;  width: 50%; padding: 20px">
 
                 <!-- 별점 -->
-<<<<<<< HEAD
-                <div class="rating" style="left: 110px; padding: 10px; margin-top: 70px; place-items: center;  overflow: hidden;">
-=======
                 <div class="rating"
                     style="left: 110px; padding: 10px; margin-top: 70px; place-items: center;  overflow: hidden;">
->>>>>>> 151f7800fc3cb196c1faddfc139182e0cfea09f4
                     <i class="rating__star far fa-star"></i>
                     <i class="rating__star far fa-star"></i>
                     <i class="rating__star far fa-star"></i>
@@ -159,44 +101,21 @@
                 </div>
                 <!-- 코멘트 -->
                 <textarea id="textarea" style="width:400px;height:370px;top:-35px;position:relative"></textarea>
-<<<<<<< HEAD
-            
-=======
 
->>>>>>> 151f7800fc3cb196c1faddfc139182e0cfea09f4
             </div>
 
             <!-- 영화 추가하는 div 삭제 버튼 -->
             <input type="button" value="삭제" onclick="remove_div(this)" style="float:right">
-<<<<<<< HEAD
-        
-=======
 
->>>>>>> 151f7800fc3cb196c1faddfc139182e0cfea09f4
         </div>
 
 
 
-<<<<<<< HEAD
-    
-=======
 
->>>>>>> 151f7800fc3cb196c1faddfc139182e0cfea09f4
 
 
         <!-- 더미데이터 파트 -->
         <!-- 그냥 값 다 넣어줘버려서 JSON 파일도 필요 없을 듯 -->
-<<<<<<< HEAD
-        <div id = "bookGroup" class="container-fluid text-center bg-2 Wrapper" >
-
-            <div id="bookCover">
-                <div id="bookWrapper">
-                    
-                </div>
-            </div>         
-        </div>
-    </div> 
-=======
         <div id="bookGroup" class="container-fluid text-center bg-2 Wrapper">
 
             <div id="bookCover">
@@ -206,16 +125,10 @@
             </div>
         </div>
     </div>
->>>>>>> 151f7800fc3cb196c1faddfc139182e0cfea09f4
 
 </body>
 
 
-<<<<<<< HEAD
-
-
-<script src="book.js"></script>
-=======
 <script src="book.js"></script>
 <script>
     let newprof = JSON.parse(localStorage.getItem('profileData')).length;
@@ -226,7 +139,6 @@
     $("#profileImg").attr("src", img);
     document.getElementById("name").innerHTML = name;
 </script>
->>>>>>> 151f7800fc3cb196c1faddfc139182e0cfea09f4
 
 
 </html>

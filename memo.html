@@ -24,13 +24,8 @@
                 <li><a href="todo.html">TODO</a></li>
                 <li><a href="memo.html" id="selectedMenu">MEMO</a></li>
                 <li><a href="travel.html" >TRAVEL</a></li>
-<<<<<<< HEAD
-                <li><a href="#" >BOOK</a></li>
-                <li><a href="#" >MOVIE</a></li>
-=======
                 <li><a href="book.html" >BOOK</a></li>
                 <li><a href="movie.html" >MOVIE</a></li>
->>>>>>> 151f7800fc3cb196c1faddfc139182e0cfea09f4
             </ul>
         </div>
     </div>
@@ -55,9 +50,10 @@
 
     <script src="memo.js"></script> 
     <script>
+        let newprof = JSON.parse(localStorage.getItem('profileData')).length;
         let profileData = JSON.parse(localStorage.getItem('profileData'));
-        let name = profileData[0].name;
-        let img = profileData[0].profile;
+        let name = profileData[newprof-1].name;
+        let img = profileData[newprof-1].profile;
 
         $("#profileImg").attr("src", img);
         document.getElementById("name").innerHTML = name;
